@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main() {
+    // Declare multiple variables of the same type
+    int a = 10, b = 20, c = 30;
+
+    // Declare multiple variables of different types
+    int x = 5;
+    float y = 3.14;
+    char z = 'A';
+
+    // Print the values of the variables
+    std::cout << "a: " << a << ", b: " << b << ", c: " << c << std::endl;
+    std::cout << "x: " << x << ", y: " << y << ", z: " << z << std::endl;
+
+    return 0;
+}

@@ -1,0 +1,55 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    // Numbers
+    int intNum = 10;
+    float floatNum = 3.14f;
+    double doubleNum = 3.141592653589793;
+    long longNum = 9223372036854775807;
+
+    // Print numbers
+    std::cout << "Integer: " << intNum << std::endl;
+    std::cout << "Float: " << floatNum << std::endl;
+    std::cout << "Double: " << doubleNum << std::endl;
+    std::cout << "Long: " << longNum << std::endl;
+
+    // Arithmetic operations
+    std::cout << "intNum + floatNum = " << (intNum + floatNum) << std::endl;
+    std::cout << "doubleNum - intNum = " << (doubleNum - intNum) << std::endl;
+    std::cout << "intNum * longNum = " << (intNum * longNum) << std::endl;
+    std::cout << "doubleNum / floatNum = " << (doubleNum / floatNum) << std::endl;
+
+    // Strings
+    std::string str1 = "Hello";
+    std::string str2 = "World";
+    std::string str3 = str1 + " " + str2;
+
+    // Print strings
+    std::cout << "String 1: " << str1 << std::endl;
+    std::cout << "String 2: " << str2 << std::endl;
+    std::cout << "Concatenated String: " << str3 << std::endl;
+
+    // String operations
+    std::cout << "Length of str3: " << str3.length() << std::endl;
+    std::cout << "First character of str1: " << str1[0] << std::endl;
+    std::cout << "Last character of str2: " << str2[str2.length() - 1] << std::endl;
+
+    // Modify a string
+    str1[0] = 'h';
+    std::cout << "Modified str1: " << str1 << std::endl;
+
+    // Find a substring
+    std::size_t found = str3.find("World");
+    if (found != std::string::npos) {
+        std::cout << "'World' found at: " << found << std::endl;
+    } else {
+        std::cout << "'World' not found" << std::endl;
+    }
+
+    // Substring extraction
+    std::string substr = str3.substr(6, 5);
+    std::cout << "Substring: " << substr << std::endl;
+
+    return 0;
+}

@@ -1,0 +1,52 @@
+#include <iostream>
+#include <vector>
+#include <list>
+#include <map>
+#include <algorithm>
+
+// Function to print a vector
+void printVector(const std::vector<int>& vec) {
+    for (int val : vec) {
+        std::cout << val << " ";
+    }
+    std::cout << std::endl;
+}
+
+// Function to print a list
+void printList(const std::list<int>& lst) {
+    for (int val : lst) {
+        std::cout << val << " ";
+    }
+    std::cout << std::endl;
+}
+
+// Function to print a map
+void printMap(const std::map<int, std::string>& mp) {
+    for (const auto& pair : mp) {
+        std::cout << pair.first << ": " << pair.second << std::endl;
+    }
+}
+
+int main() {
+    // Vector example
+    std::vector<int> vec = {1, 2, 3, 4, 5};
+    std::cout << "Vector elements: ";
+    printVector(vec);
+
+    // List example
+    std::list<int> lst = {10, 20, 30, 40, 50};
+    std::cout << "List elements: ";
+    printList(lst);
+
+    // Map example
+    std::map<int, std::string> mp = {{1, "One"}, {2, "Two"}, {3, "Three"}};
+    std::cout << "Map elements: " << std::endl;
+    printMap(mp);
+
+    // Using STL algorithms
+    std::sort(vec.begin(), vec.end(), std::greater<int>());
+    std::cout << "Sorted vector in descending order: ";
+    printVector(vec);
+
+    return 0;
+}

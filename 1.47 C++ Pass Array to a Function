@@ -1,0 +1,22 @@
+#include <iostream>
+
+// Function that takes an array and its size as parameters
+void printArray(int arr[], int size) {
+    for (int i = 0; i < size; ++i) {
+        std::cout << arr[i] << " ";
+    }
+    std::cout << std::endl;
+}
+
+int main() {
+    // Declare and initialize an array
+    int numbers[] = {1, 2, 3, 4, 5};
+
+    // Calculate the size of the array
+    int arraySize = sizeof(numbers) / sizeof(numbers[0]);
+
+    // Call the function and pass the array and its size
+    printArray(numbers, arraySize);
+
+    return 0;
+}

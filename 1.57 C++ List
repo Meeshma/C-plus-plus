@@ -1,0 +1,37 @@
+#include <iostream>
+#include <list>
+
+// Function to print a list
+void printList(const std::list<int>& lst) {
+    for (int val : lst) {
+        std::cout << val << " ";
+    }
+    std::cout << std::endl;
+}
+
+int main() {
+    // Declare and initialize a list
+    std::list<int> numbers = {10, 20, 30, 40, 50};
+
+    // Print the list elements
+    std::cout << "List elements: ";
+    printList(numbers);
+
+    // Add elements to the list
+    numbers.push_back(60);
+    numbers.push_front(5);
+
+    // Print the updated list elements
+    std::cout << "Updated list elements: ";
+    printList(numbers);
+
+    // Remove elements from the list
+    numbers.pop_back();
+    numbers.pop_front();
+
+    // Print the list elements after removal
+    std::cout << "List elements after removal: ";
+    printList(numbers);
+
+    return 0;
+}

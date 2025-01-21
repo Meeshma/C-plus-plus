@@ -1,0 +1,23 @@
+#include <iostream>
+
+// Function that returns the sum of two integers
+int add(int a, int b) {
+    return a + b;
+}
+
+// Function that returns a boolean value
+bool isEven(int number) {
+    return (number % 2 == 0);
+}
+
+int main() {
+    // Call the add function and store the result
+    int sum = add(5, 3);
+    std::cout << "Sum: " << sum << std::endl;
+
+    // Call the isEven function and store the result
+    bool even = isEven(sum);
+    std::cout << "Is the sum even? " << std::boolalpha << even << std::endl;
+
+    return 0;
+}

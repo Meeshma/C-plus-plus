@@ -1,0 +1,37 @@
+#include <iostream>
+#include <deque>
+
+// Function to print a deque
+void printDeque(const std::deque<int>& dq) {
+    for (int val : dq) {
+        std::cout << val << " ";
+    }
+    std::cout << std::endl;
+}
+
+int main() {
+    // Declare and initialize a deque
+    std::deque<int> numbers = {10, 20, 30, 40, 50};
+
+    // Print the deque elements
+    std::cout << "Deque elements: ";
+    printDeque(numbers);
+
+    // Add elements to the front and back of the deque
+    numbers.push_back(60);
+    numbers.push_front(5);
+
+    // Print the updated deque elements
+    std::cout << "Updated deque elements: ";
+    printDeque(numbers);
+
+    // Remove elements from the front and back of the deque
+    numbers.pop_back();
+    numbers.pop_front();
+
+    // Print the deque elements after removal
+    std::cout << "Deque elements after removal: ";
+    printDeque(numbers);
+
+    return 0;
+}

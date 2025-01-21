@@ -1,0 +1,37 @@
+#include <iostream>
+
+// Function with value parameters
+void printSum(int a, int b) {
+    int sum = a + b;
+    std::cout << "Sum: " << sum << std::endl;
+}
+
+// Function with reference parameters
+void increment(int& a, int& b) {
+    a++;
+    b++;
+}
+
+// Function with default parameters
+void printMessage(const std::string& message = "Hello, World!") {
+    std::cout << message << std::endl;
+}
+
+int main() {
+    // Call the function with value parameters
+    printSum(5, 3);
+
+    // Declare variables
+    int x = 10;
+    int y = 20;
+
+    // Call the function with reference parameters
+    increment(x, y);
+    std::cout << "Incremented values: x = " << x << ", y = " << y << std::endl;
+
+    // Call the function with default parameters
+    printMessage();
+    printMessage("Custom message");
+
+    return 0;
+}

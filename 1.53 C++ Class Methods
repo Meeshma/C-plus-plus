@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+
+// Define a class
+class Car {
+public:
+    // Member variables
+    std::string brand;
+    std::string model;
+    int year;
+
+    // Constructor
+    Car(std::string b, std::string m, int y) {
+        brand = b;
+        model = m;
+        year = y;
+    }
+
+    // Member function
+    void displayInfo() {
+        std::cout << "Brand: " << brand << std::endl;
+        std::cout << "Model: " << model << std::endl;
+        std::cout << "Year: " << year << std::endl;
+    }
+
+    // Another member function
+    void startEngine() {
+        std::cout << "The engine of the " << brand << " " << model << " is now running." << std::endl;
+    }
+};
+
+int main() {
+    // Create an object of the Car class
+    Car car1("Toyota", "Corolla", 2020);
+
+    // Call the member functions
+    car1.displayInfo();
+    car1.startEngine();
+
+    return 0;
+}

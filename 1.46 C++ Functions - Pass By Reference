@@ -1,0 +1,25 @@
+#include <iostream>
+
+// Function that swaps the values of two integers using reference parameters
+void swap(int& a, int& b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+int main() {
+    // Declare variables
+    int num1 = 10;
+    int num2 = 20;
+
+    // Print original values
+    std::cout << "Original values: num1 = " << num1 << ", num2 = " << num2 << std::endl;
+
+    // Call the swap function
+    swap(num1, num2);
+
+    // Print swapped values
+    std::cout << "Swapped values: num1 = " << num1 << ", num2 = " << num2 << std::endl;
+
+    return 0;
+}

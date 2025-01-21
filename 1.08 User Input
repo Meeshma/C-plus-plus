@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    // Declare variables
+    int age;
+    float height;
+    char initial;
+    std::string name;
+
+    // Take user input
+    std::cout << "Enter your name: ";
+    std::getline(std::cin, name);
+
+    std::cout << "Enter your age: ";
+    std::cin >> age;
+
+    std::cout << "Enter your height: ";
+    std::cin >> height;
+
+    std::cout << "Enter the initial of your last name: ";
+    std::cin >> initial;
+
+    // Print the user input
+    std::cout << "Name: " << name << std::endl;
+    std::cout << "Age: " << age << std::endl;
+    std::cout << "Height: " << height << std::endl;
+    std::cout << "Initial: " << initial << std::endl;
+
+    return 0;
+}

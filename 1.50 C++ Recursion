@@ -1,0 +1,27 @@
+#include <iostream>
+
+// Function to calculate the factorial of a number using recursion
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+int main() {
+    // Declare a variable
+    int number;
+
+    // Take user input
+    std::cout << "Enter a positive integer: ";
+    std::cin >> number;
+
+    // Calculate the factorial using the recursive function
+    int result = factorial(number);
+
+    // Print the result
+    std::cout << "Factorial of " << number << " is " << result << std::endl;
+
+    return 0;
+}

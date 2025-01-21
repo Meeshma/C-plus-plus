@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    // Declare and initialize a string
+    std::string str = "Hello, World!";
+
+    // Get the length of the string
+    std::size_t length = str.length();
+
+    // Print the length of the string
+    std::cout << "The length of the string is: " << length << std::endl;
+
+    return 0;
+}

@@ -1,0 +1,53 @@
+#include <iostream>
+
+// Define an enumeration
+enum Day {
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+};
+
+int main() {
+    // Declare an enumeration variable
+    Day today;
+
+    // Assign a value to the enumeration variable
+    today = Wednesday;
+
+    // Print the value of the enumeration variable
+    std::cout << "Today is day number: " << today << std::endl;
+
+    // Use enumeration in a switch statement
+    switch (today) {
+        case Monday:
+            std::cout << "It's Monday!" << std::endl;
+            break;
+        case Tuesday:
+            std::cout << "It's Tuesday!" << std::endl;
+            break;
+        case Wednesday:
+            std::cout << "It's Wednesday!" << std::endl;
+            break;
+        case Thursday:
+            std::cout << "It's Thursday!" << std::endl;
+            break;
+        case Friday:
+            std::cout << "It's Friday!" << std::endl;
+            break;
+        case Saturday:
+            std::cout << "It's Saturday!" << std::endl;
+            break;
+        case Sunday:
+            std::cout << "It's Sunday!" << std::endl;
+            break;
+        default:
+            std::cout << "Invalid day!" << std::endl;
+            break;
+    }
+
+    return 0;
+}

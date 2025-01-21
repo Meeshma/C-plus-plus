@@ -1,0 +1,15 @@
+#include <iostream>
+
+// Define a constant using the const keyword
+const int MAX_AGE = 100;
+
+// Define a constant using the #define preprocessor directive
+#define PI 3.14159
+
+int main() {
+    // Print the values of the constants
+    std::cout << "The maximum age is: " << MAX_AGE << std::endl;
+    std::cout << "The value of PI is: " << PI << std::endl;
+
+    return 0;
+}

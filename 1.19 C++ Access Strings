@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    // Declare and initialize a string
+    std::string str = "Hello, World!";
+
+    // Access individual characters using the [] operator
+    std::cout << "First character: " << str[0] << std::endl;
+    std::cout << "Last character: " << str[str.length() - 1] << std::endl;
+
+    // Access individual characters using the at() method
+    std::cout << "Character at index 1: " << str.at(1) << std::endl;
+    std::cout << "Character at index 5: " << str.at(5) << std::endl;
+
+    // Modify individual characters
+    str[0] = 'h';
+    str.at(7) = 'w';
+    std::cout << "Modified string: " << str << std::endl;
+
+    // Iterate over the string using a for loop
+    std::cout << "Characters in the string: ";
+    for (std::size_t i = 0; i < str.length(); ++i) {
+        std::cout << str[i] << " ";
+    }
+    std::cout << std::endl;
+
+    // Iterate over the string using a range-based for loop
+    std::cout << "Characters in the string (range-based for loop): ";
+    for (char c : str) {
+        std::cout << c << " ";
+    }
+    std::cout << std::endl;
+
+    // Access the first and last characters using front() and back() methods
+    std::cout << "First character (front): " << str.front() << std::endl;
+    std::cout << "Last character (back): " << str.back() << std::endl;
+
+    return 0;
+}

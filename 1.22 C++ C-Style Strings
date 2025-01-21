@@ -1,0 +1,50 @@
+#include <iostream>
+#include <cstring>
+
+int main() {
+    // Declare and initialize C-style strings
+    char str1[20] = "Hello";
+    char str2[20] = "World";
+    char str3[40];
+
+    // Copy str1 to str3
+    std::strcpy(str3, str1);
+    std::cout << "str3 after strcpy: " << str3 << std::endl;
+
+    // Concatenate str1 and str2
+    std::strcat(str3, " ");
+    std::strcat(str3, str2);
+    std::cout << "str3 after strcat: " << str3 << std::endl;
+
+    // Get the length of str3
+    std::size_t length = std::strlen(str3);
+    std::cout << "Length of str3: " << length << std::endl;
+
+    // Compare str1 and str2
+    int result = std::strcmp(str1, str2);
+    if (result == 0) {
+        std::cout << "str1 and str2 are equal" << std::endl;
+    } else if (result < 0) {
+        std::cout << "str1 is less than str2" << std::endl;
+    } else {
+        std::cout << "str1 is greater than str2" << std::endl;
+    }
+
+    // Find a character in str3
+    char* pos = std::strchr(str3, 'W');
+    if (pos != nullptr) {
+        std::cout << "Character 'W' found at position: " << (pos - str3) << std::endl;
+    } else {
+        std::cout << "Character 'W' not found" << std::endl;
+    }
+
+    // Find a substring in str3
+    char* substr = std::strstr(str3, "World");
+    if (substr != nullptr) {
+        std::cout << "Substring 'World' found at position: " << (substr - str3) << std::endl;
+    } else {
+        std::cout << "Substring 'World' not found" << std::endl;
+    }
+
+    return 0;
+}

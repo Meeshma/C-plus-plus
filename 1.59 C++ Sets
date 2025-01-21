@@ -1,0 +1,36 @@
+#include <iostream>
+#include <set>
+
+// Function to print a set
+void printSet(const std::set<int>& s) {
+    for (int val : s) {
+        std::cout << val << " ";
+    }
+    std::cout << std::endl;
+}
+
+int main() {
+    // Declare and initialize a set
+    std::set<int> numbers = {10, 20, 30, 40, 50};
+
+    // Print the set elements
+    std::cout << "Set elements: ";
+    printSet(numbers);
+
+    // Add elements to the set
+    numbers.insert(60);
+    numbers.insert(70);
+
+    // Print the updated set elements
+    std::cout << "Updated set elements: ";
+    printSet(numbers);
+
+    // Remove an element from the set
+    numbers.erase(30);
+
+    // Print the set elements after removal
+    std::cout << "Set elements after removal: ";
+    printSet(numbers);
+
+    return 0;
+}

@@ -1,0 +1,37 @@
+#include <iostream>
+#include <stack>
+
+// Function to print a stack
+void printStack(std::stack<int> s) {
+    while (!s.empty()) {
+        std::cout << s.top() << " ";
+        s.pop();
+    }
+    std::cout << std::endl;
+}
+
+int main() {
+    // Declare a stack
+    std::stack<int> numbers;
+
+    // Push elements onto the stack
+    numbers.push(10);
+    numbers.push(20);
+    numbers.push(30);
+    numbers.push(40);
+    numbers.push(50);
+
+    // Print the stack elements
+    std::cout << "Stack elements: ";
+    printStack(numbers);
+
+    // Push more elements onto the stack
+    numbers.push(60);
+    numbers.push(70);
+
+    // Print the updated stack elements
+    std::cout << "Updated stack elements: ";
+    printStack(numbers);
+
+    return 0;
+}

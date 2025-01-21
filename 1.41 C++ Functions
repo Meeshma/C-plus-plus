@@ -1,0 +1,25 @@
+#include <iostream>
+
+// Function declaration
+int add(int a, int b);
+void printMessage();
+
+int main() {
+    // Call the add function
+    int sum = add(5, 3);
+    std::cout << "Sum: " << sum << std::endl;
+
+    // Call the printMessage function
+    printMessage();
+
+    return 0;
+}
+
+// Function definition
+int add(int a, int b) {
+    return a + b;
+}
+
+void printMessage() {
+    std::cout << "Hello, World!" << std::endl;
+}

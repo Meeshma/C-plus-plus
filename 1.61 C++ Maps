@@ -1,0 +1,41 @@
+#include <iostream>
+#include <map>
+
+// Function to print a map
+void printMap(const std::map<int, std::string>& mp) {
+    for (const auto& pair : mp) {
+        std::cout << pair.first << ": " << pair.second << std::endl;
+    }
+}
+
+int main() {
+    // Declare and initialize a map
+    std::map<int, std::string> numbers = {
+        {1, "One"},
+        {2, "Two"},
+        {3, "Three"},
+        {4, "Four"},
+        {5, "Five"}
+    };
+
+    // Print the map elements
+    std::cout << "Map elements: " << std::endl;
+    printMap(numbers);
+
+    // Add elements to the map
+    numbers[6] = "Six";
+    numbers[7] = "Seven";
+
+    // Print the updated map elements
+    std::cout << "Updated map elements: " << std::endl;
+    printMap(numbers);
+
+    // Remove an element from the map
+    numbers.erase(3);
+
+    // Print the map elements after removal
+    std::cout << "Map elements after removal: " << std::endl;
+    printMap(numbers);
+
+    return 0;
+}

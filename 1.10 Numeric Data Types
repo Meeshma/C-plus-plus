@@ -1,0 +1,25 @@
+#include <iostream>
+
+int main() {
+    // Integer data types
+    short shortNum = 32767;
+    int intNum = 2147483647;
+    long longNum = 9223372036854775807;
+    long long longLongNum = 9223372036854775807;
+
+    // Floating-point data types
+    float floatNum = 3.14f;
+    double doubleNum = 3.141592653589793;
+    long double longDoubleNum = 3.14159265358979323846L;
+
+    // Print the values of the numeric variables
+    std::cout << "Short: " << shortNum << std::endl;
+    std::cout << "Int: " << intNum << std::endl;
+    std::cout << "Long: " << longNum << std::endl;
+    std::cout << "Long Long: " << longLongNum << std::endl;
+    std::cout << "Float: " << floatNum << std::endl;
+    std::cout << "Double: " << doubleNum << std::endl;
+    std::cout << "Long Double: " << longDoubleNum << std::endl;
+
+    return 0;
+}

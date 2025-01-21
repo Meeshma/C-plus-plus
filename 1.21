@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    // Using the std namespace
+    using namespace std;
+
+    // Declare and initialize strings
+    string firstName = "Akash";
+    string lastName = "Kumar";
+    string fullName = firstName + " " + lastName;
+
+    // Print the strings
+    cout << "First Name: " << firstName << endl;
+    cout << "Last Name: " << lastName << endl;
+    cout << "Full Name: " << fullName << endl;
+
+    // Get the length of the string
+    cout << "Length of Full Name: " << fullName.length() << endl;
+
+    // Access individual characters
+    cout << "First character of First Name: " << firstName[0] << endl;
+    cout << "Last character of Last Name: " << lastName[lastName.length() - 1] << endl;
+
+    // Modify a string
+    fullName[0] = 'A';
+    cout << "Modified Full Name: " << fullName << endl;
+
+    return 0;
+}

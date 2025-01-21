@@ -1,0 +1,65 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    // Declare and initialize strings
+    std::string str1 = "Hello";
+    std::string str2 = "World";
+    std::string str3;
+
+    // Concatenate strings
+    str3 = str1 + " " + str2;
+    std::cout << "Concatenated string: " << str3 << std::endl;
+
+    // Get the length of a string
+    std::cout << "Length of str3: " << str3.length() << std::endl;
+
+    // Access individual characters
+    std::cout << "First character of str1: " << str1[0] << std::endl;
+    std::cout << "Last character of str2: " << str2[str2.length() - 1] << std::endl;
+
+    // Modify a string
+    str1[0] = 'h';
+    std::cout << "Modified str1: " << str1 << std::endl;
+
+    // Compare strings
+    if (str1 == str2) {
+        std::cout << "str1 and str2 are equal" << std::endl;
+    } else {
+        std::cout << "str1 and str2 are not equal" << std::endl;
+    }
+
+    // Find a substring
+    std::size_t found = str3.find("World");
+    if (found != std::string::npos) {
+        std::cout << "'World' found at: " << found << std::endl;
+    } else {
+        std::cout << "'World' not found" << std::endl;
+    }
+
+    // Substring extraction
+    std::string substr = str3.substr(6, 5);
+    std::cout << "Substring: " << substr << std::endl;
+
+    // String to C-string
+    const char* cstr = str3.c_str();
+    std::cout << "C-string: " << cstr << std::endl;
+
+    // Append to a string
+    str3.append("!!!");
+    std::cout << "Appended string: " << str3 << std::endl;
+
+    // Insert into a string
+    str3.insert(5, ",");
+    std::cout << "String after insertion: " << str3 << std::endl;
+
+    // Erase from a string
+    str3.erase(5, 1);
+    std::cout << "String after erasure: " << str3 << std::endl;
+
+    // Replace in a string
+    str3.replace(6, 5, "Universe");
+    std::cout << "String after replacement: " << str3 << std::endl;
+
+    return 0;
+}

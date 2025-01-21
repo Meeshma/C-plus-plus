@@ -1,0 +1,26 @@
+#include <iostream>
+
+// Identifiers: variable names, function names, etc.
+int main() {
+    // Variable identifiers
+    int age = 25;
+    float height = 5.9;
+    char initial = 'A';
+    std::string name = "Akash";
+
+    // Function identifier
+    void printDetails();
+
+    // Print the values of the variables
+    std::cout << "Name: " << name << std::endl;
+    std::cout << "Age: " << age << std::endl;
+    std::cout << "Height: " << height << std::endl;
+    std::cout << "Initial: " << initial << std::endl;
+
+    return 0;
+}
+
+// Function definition
+void printDetails() {
+    std::cout << "This function prints details." << std::endl;
+}

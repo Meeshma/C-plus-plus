@@ -1,0 +1,30 @@
+#include <iostream>
+
+// Global variable
+int globalVar = 10;
+
+void printGlobalVar() {
+    std::cout << "Global variable: " << globalVar << std::endl;
+}
+
+int main() {
+    // Local variable
+    int localVar = 20;
+
+    // Print local variable
+    std::cout << "Local variable: " << localVar << std::endl;
+
+    // Print global variable
+    printGlobalVar();
+
+    // Block scope
+    {
+        int blockVar = 30;
+        std::cout << "Block variable: " << blockVar << std::endl;
+    }
+
+    // Uncommenting the following line will cause a compilation error
+    // std::cout << "Block variable: " << blockVar << std::endl;
+
+    return 0;
+}

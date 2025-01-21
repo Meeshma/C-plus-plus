@@ -1,0 +1,67 @@
+#include <iostream>
+
+int main() {
+    // Arithmetic operators
+    int a = 10, b = 5;
+    std::cout << "Arithmetic Operators:" << std::endl;
+    std::cout << "a + b = " << (a + b) << std::endl;
+    std::cout << "a - b = " << (a - b) << std::endl;
+    std::cout << "a * b = " << (a * b) << std::endl;
+    std::cout << "a / b = " << (a / b) << std::endl;
+    std::cout << "a % b = " << (a % b) << std::endl;
+
+    // Relational operators
+    std::cout << "\nRelational Operators:" << std::endl;
+    std::cout << "a == b: " << (a == b) << std::endl;
+    std::cout << "a != b: " << (a != b) << std::endl;
+    std::cout << "a > b: " << (a > b) << std::endl;
+    std::cout << "a < b: " << (a < b) << std::endl;
+    std::cout << "a >= b: " << (a >= b) << std::endl;
+    std::cout << "a <= b: " << (a <= b) << std::endl;
+
+    // Logical operators
+    bool x = true, y = false;
+    std::cout << "\nLogical Operators:" << std::endl;
+    std::cout << "x && y: " << (x && y) << std::endl;
+    std::cout << "x || y: " << (x || y) << std::endl;
+    std::cout << "!x: " << (!x) << std::endl;
+
+    // Bitwise operators
+    std::cout << "\nBitwise Operators:" << std::endl;
+    std::cout << "a & b: " << (a & b) << std::endl;
+    std::cout << "a | b: " << (a | b) << std::endl;
+    std::cout << "a ^ b: " << (a ^ b) << std::endl;
+    std::cout << "~a: " << (~a) << std::endl;
+    std::cout << "a << 1: " << (a << 1) << std::endl;
+    std::cout << "a >> 1: " << (a >> 1) << std::endl;
+
+    // Assignment operators
+    std::cout << "\nAssignment Operators:" << std::endl;
+    int c;
+    c = a;
+    std::cout << "c = a: " << c << std::endl;
+    c += a;
+    std::cout << "c += a: " << c << std::endl;
+    c -= a;
+    std::cout << "c -= a: " << c << std::endl;
+    c *= a;
+    std::cout << "c *= a: " << c << std::endl;
+    c /= a;
+    std::cout << "c /= a: " << c << std::endl;
+    c %= a;
+    std::cout << "c %= a: " << c << std::endl;
+
+    // Increment and decrement operators
+    std::cout << "\nIncrement and Decrement Operators:" << std::endl;
+    std::cout << "a++: " << a++ << std::endl;
+    std::cout << "++a: " << ++a << std::endl;
+    std::cout << "a--: " << a-- << std::endl;
+    std::cout << "--a: " << --a << std::endl;
+
+    // Conditional (ternary) operator
+    std::cout << "\nConditional (Ternary) Operator:" << std::endl;
+    int max = (a > b) ? a : b;
+    std::cout << "max = (a > b) ? a : b: " << max << std::endl;
+
+    return 0;
+}

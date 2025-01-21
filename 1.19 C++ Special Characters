@@ -1,0 +1,22 @@
+#include <iostream>
+
+int main() {
+    // Declare and initialize a string with special characters
+    std::string str = "Hello, World!\nWelcome to C++ programming.\tLet's learn about special characters.\n";
+
+    // Print the string with special characters
+    std::cout << str;
+
+    // Demonstrate the use of escape sequences
+    std::cout << "Newline character: \\n\n";
+    std::cout << "Tab character: \\t\tThis is a tab.\n";
+    std::cout << "Backslash character: \\\n";
+    std::cout << "Single quote character: \'\n";
+    std::cout << "Double quote character: \"\n";
+    std::cout << "Question mark character: \?\n";
+    std::cout << "Alert (bell) character: \a\n";
+    std::cout << "Backspace character: Hello\b World!\n";
+    std::cout << "Carriage return character: Hello\rWorld!\n";
+
+    return 0;
+}

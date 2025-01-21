@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    // Integer data type
+    int integer = 10;
+    std::cout << "Integer: " << integer << std::endl;
+
+    // Floating-point data type
+    float floating = 3.14f;
+    std::cout << "Float: " << floating << std::endl;
+
+    // Double data type
+    double doubleNum = 3.141592653589793;
+    std::cout << "Double: " << doubleNum << std::endl;
+
+    // Character data type
+    char character = 'A';
+    std::cout << "Character: " << character << std::endl;
+
+    // Boolean data type
+    bool boolean = true;
+    std::cout << "Boolean: " << std::boolalpha << boolean << std::endl;
+
+    // String data type
+    std::string text = "Hello, World!";
+    std::cout << "String: " << text << std::endl;
+
+    return 0;
+}

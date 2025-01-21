@@ -1,0 +1,26 @@
+#include <iostream>
+
+int main() {
+    // Declare boolean variables
+    bool isSunny = true;
+    bool isRaining = false;
+
+    // Print the values of the boolean variables
+    std::cout << "Is it sunny? " << std::boolalpha << isSunny << std::endl;
+    std::cout << "Is it raining? " << std::boolalpha << isRaining << std::endl;
+
+    // Use boolean variables in conditional statements
+    if (isSunny) {
+        std::cout << "It's a sunny day!" << std::endl;
+    } else {
+        std::cout << "It's not sunny today." << std::endl;
+    }
+
+    if (isRaining) {
+        std::cout << "It's raining outside." << std::endl;
+    } else {
+        std::cout << "It's not raining outside." << std::endl;
+    }
+
+    return 0;
+}

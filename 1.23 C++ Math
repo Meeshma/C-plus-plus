@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+
+int main() {
+    // Declare variables
+    double num1 = 9.0;
+    double num2 = 2.0;
+
+    // Basic mathematical operations
+    std::cout << "Addition: " << (num1 + num2) << std::endl;
+    std::cout << "Subtraction: " << (num1 - num2) << std::endl;
+    std::cout << "Multiplication: " << (num1 * num2) << std::endl;
+    std::cout << "Division: " << (num1 / num2) << std::endl;
+
+    // Power and square root
+    std::cout << "Power: " << std::pow(num1, num2) << std::endl;
+    std::cout << "Square root: " << std::sqrt(num1) << std::endl;
+
+    // Trigonometric functions
+    double angle = 45.0; // Angle in degrees
+    double radians = angle * (M_PI / 180.0); // Convert to radians
+    std::cout << "Sine: " << std::sin(radians) << std::endl;
+    std::cout << "Cosine: " << std::cos(radians) << std::endl;
+    std::cout << "Tangent: " << std::tan(radians) << std::endl;
+
+    // Logarithmic functions
+    std::cout << "Natural logarithm: " << std::log(num1) << std::endl;
+    std::cout << "Logarithm base 10: " << std::log10(num1) << std::endl;
+
+    return 0;
+}

@@ -1,0 +1,37 @@
+#include <iostream>
+#include <queue>
+
+// Function to print a queue
+void printQueue(std::queue<int> q) {
+    while (!q.empty()) {
+        std::cout << q.front() << " ";
+        q.pop();
+    }
+    std::cout << std::endl;
+}
+
+int main() {
+    // Declare a queue
+    std::queue<int> numbers;
+
+    // Add elements to the queue
+    numbers.push(10);
+    numbers.push(20);
+    numbers.push(30);
+    numbers.push(40);
+    numbers.push(50);
+
+    // Print the queue elements
+    std::cout << "Queue elements: ";
+    printQueue(numbers);
+
+    // Add more elements to the queue
+    numbers.push(60);
+    numbers.push(70);
+
+    // Print the updated queue elements
+    std::cout << "Updated queue elements: ";
+    printQueue(numbers);
+
+    return 0;
+}

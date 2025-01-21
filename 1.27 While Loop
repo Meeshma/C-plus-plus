@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main() {
+    // Declare a variable
+    int number = 1;
+
+    // While loop
+    while (number <= 10) {
+        std::cout << "Number: " << number << std::endl;
+        number++;
+    }
+
+    return 0;
+}

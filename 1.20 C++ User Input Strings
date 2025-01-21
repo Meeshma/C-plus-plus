@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    // Declare string variables
+    std::string firstName;
+    std::string lastName;
+
+    // Take user input for the first name
+    std::cout << "Enter your first name: ";
+    std::getline(std::cin, firstName);
+
+    // Take user input for the last name
+    std::cout << "Enter your last name: ";
+    std::getline(std::cin, lastName);
+
+    // Concatenate the first name and last name
+    std::string fullName = firstName + " " + lastName;
+
+    // Print the full name
+    std::cout << "Your full name is: " << fullName << std::endl;
+
+    return 0;
+}

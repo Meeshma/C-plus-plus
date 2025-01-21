@@ -1,0 +1,22 @@
+#include <iostream>
+
+// Function that uses a reference parameter
+void increment(int& ref) {
+    ref++;
+}
+
+int main() {
+    // Declare a variable
+    int number = 10;
+
+    // Print the original value
+    std::cout << "Original value: " << number << std::endl;
+
+    // Call the function with a reference parameter
+    increment(number);
+
+    // Print the modified value
+    std::cout << "Modified value: " << number << std::endl;
+
+    return 0;
+}

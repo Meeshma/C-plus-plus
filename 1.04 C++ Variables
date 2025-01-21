@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main() {
+    // Declare variables
+    int integer = 10;
+    float floating = 3.14;
+    char character = 'A';
+    std::string text = "Hello, World!";
+
+    // Print the values of the variables
+    std::cout << "Integer: " << integer << std::endl;
+    std::cout << "Floating-point number: " << floating << std::endl;
+    std::cout << "Character: " << character << std::endl;
+    std::cout << "String: " << text << std::endl;
+
+    return 0;
+}

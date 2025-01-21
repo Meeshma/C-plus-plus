@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main() {
+    // Declare and initialize an array
+    int numbers[] = {1, 2, 3, 4, 5};
+
+    // Calculate the size of the array
+    int arraySize = sizeof(numbers) / sizeof(numbers[0]);
+
+    // Print the size of the array
+    std::cout << "The size of the array is: " << arraySize << std::endl;
+
+    return 0;
+}
